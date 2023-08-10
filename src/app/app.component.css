@@ -1,0 +1,11 @@
+.container {
+   margin-top: 30px;
+}
+
+p {
+   color: blue;
+}
+
+button {
+   margin: auto 0.25rem;
+}
