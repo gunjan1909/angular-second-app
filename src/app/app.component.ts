@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'second-app';
-  serverElements: { type: string; name: string; content: string }[] = [];
-  newServerName = '';
-  newServerContent = '';
+  serverElements: { type: string; name: string; content: string }[] = [
+    {
+      type: 'server',
+      name: 'Testserver',
+      content: 'Just a test!',
+    },
+  ];
 }
 
 /*import { Component } from '@angular/core';
