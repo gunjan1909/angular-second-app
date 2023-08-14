@@ -13,6 +13,11 @@ export class AppComponent {
       name: 'Testserver',
       content: 'Just a test!',
     },
+    {
+      type: 'blueprint',
+      name: 'Testserver',
+      content: 'Just a test!',
+    },
   ];
 }
 
