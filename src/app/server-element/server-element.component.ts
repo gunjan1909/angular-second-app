@@ -22,7 +22,11 @@ export class ServerElementComponent implements OnInit {
   /*@Input('srvEle')
   element: { type: string; name: string; content: string } | undefined;*/
 
-  constructor() {}
+  constructor() {
+    console.log('constructor called');
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('ngOninit called');
+  }
 }
