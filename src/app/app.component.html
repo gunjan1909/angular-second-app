@@ -1,16 +1,29 @@
 <div class="container">
+
+  <!-- cockpit element -->
+
   <app-cockpit (serverCreated)="onServerAdded($event)" (bpCreated)="onBlueprintAdded($event)"></app-cockpit>
+
   <hr>
+
   <div class="row">
     <div class="col-xs-12">
+
+      <!-- server element -->
+
       <!-- binding to custom property -->
       <app-server-element *ngFor="let serverElement of serverElements" [element]="serverElement">
+        <!-- using <ng-content></ng-content> in server element -->
         <p>
           <strong *ngIf="serverElement?.type === 'server'" style="color: red">{{ serverElement?.content }}</strong>
           <em *ngIf="serverElement?.type === 'blueprint'">{{ serverElement?.content }}</em>
         </p>
       </app-server-element>
+
+      <!-- binding to custom property using alias name srvEle -->
+
       <!-- <app-server-element *ngFor="let serverElement of serverElements" [srvEle]="serverElement"></app-server-element> -->
+
     </div>
   </div>
 </div>
